@@ -100,15 +100,15 @@ else if (pick == 4){
             scanf("%d", &choise);
     }
 for (int i=0; i<choise; i++){
-    printf("   _ ");
+    printf("   _    ");
 }
 printf("\n");
 for (int i=0; i<choise; i++){
-    printf("__(o)> ");
+    printf("__(o)>  ");
 }
 printf("\n");
 for (int i=0; i<choise; i++){
-    printf("\\___) ");
+    printf("\\___)   ");
 }
 printf("\n");
 }
