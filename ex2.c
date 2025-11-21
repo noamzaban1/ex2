@@ -95,22 +95,33 @@ else if (pick == 4){
     int choise;
     printf("please enter number of ducks:\n");
     scanf("%d", &choise);
-    while(choise<1||choise>9){
+    while(choise<1){
         printf("Invalid number, plaese try again\n"); 
             scanf("%d", &choise);
     }
-for (int i=0; i<choise; i++){
-    printf("   _    ");
+while (choise >0)
+{
+    int batch;
+    if (choise >= 10) {
+            batch = 10;
+        } else {
+            batch = choise;
+        }
+        for (int i = 0; i < batch; i++) {
+            printf("   _\t\t");
+        }
+        printf("\n");
+        for (int i = 0; i < batch; i++) {
+            printf("__(o)>\t\t");
+        }
+        printf("\n");
+        for (int i = 0; i < batch; i++) {
+            printf("\\___)\t\t");
+        }
+        printf("\n\n"); 
+        choise = choise - batch;
 }
-printf("\n");
-for (int i=0; i<choise; i++){
-    printf("__(o)>  ");
-}
-printf("\n");
-for (int i=0; i<choise; i++){
-    printf("\\___)   ");
-}
-printf("\n");
+
 }
 
 else if (pick == 5){
