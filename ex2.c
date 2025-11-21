@@ -53,7 +53,7 @@ else if (pick == 2 ){
        scanf("%d", &ducks);
      }
      printf("you entered %d ducks\n", ducks);
-     
+
      //data for each duck
      for (int i=0; i<ducks; i++){
         printf("duck %d do QUAK? 1 for yes, 0 for no\n", i+1);
@@ -75,9 +75,9 @@ else if (pick == 2 ){
 
         if (result == 1)
         {
-            printf("duck number %d do Quak", i+1);
-        }else {
-            printf("duck number %d do Sh..", i+1);
+            printf("duck number %d do Quak\n", i+1);
+        }else if (result==0) {
+            printf("duck number %d do Sh..\n", i+1);
         }
      
      }
