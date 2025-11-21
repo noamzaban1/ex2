@@ -38,7 +38,7 @@ if (pick == 1){
         }
         number = number >> 1; 
      }
-     printf("Ducky earns %d corns", count);
+     printf("Ducky earns %d corns\n", count);
 
      }
 
@@ -71,7 +71,8 @@ else if (pick == 2 ){
     }
     //summery
         for(int i=0; i<ducks; i++){
-        int result = (memorey >> 1) & 1; 
+
+        int result = (memorey >> i) & 1; 
 
         if (result == 1)
         {
