@@ -94,7 +94,7 @@ else if (pick == 3){
 else if (pick == 4){
     int choise;
     printf("please enter number of ducks:\n");
-    scanf("%d", choise);
+    scanf("%d", &choise);
     while(choise<0||choise>10){
         printf("Invalid number, plaese try again\n"); 
             scanf("%d", &choise);
@@ -102,7 +102,7 @@ else if (pick == 4){
 for (int i=0; i<choise; i++){
     printf("   _\n");
     printf("__(0)>\n");
-    printf("\___)");
+    printf("\\___)");
 }
 printf("\n");
 }
