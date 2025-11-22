@@ -152,16 +152,15 @@ else if (pick == 5){
          scanf("%d", &number);
     }
 int help = number;
-int sfarot;
-while(number!=0){
+int sfarot=0;
+while(help!=0){
 help= help/10;
 sfarot++;
 }
-
-  for(int i=0; i<sfarot;i++)  {
+for(int i=0; i<sfarot;i++)  {
 int ezra=number %10;
-int ezra2=number /10;
-for(int i=0;i<sfarot-1;i++){
+int ezra2=number/10;
+for(int k=0;k<sfarot-1;k++){
     if (ezra==ezra2%10){
         printf("%d appears more than one!\n", ezra);
     }
