@@ -151,24 +151,22 @@ else if (pick == 5){
           printf("Invalid number, plaese try again\n"); 
          scanf("%d", &number);
     }
-int help = number;
-int sfarot=0;
-while(help!=0){
-help= help/10;
-sfarot++;
-}
-for(int i=0; i<sfarot;i++)  {
-int ezra=number %10;
-int ezra2=number/10;
-for(int k=0;k<sfarot-1;k++){
-    if (ezra==ezra2%10){
-        printf("%d appears more than one!\n", ezra);
+long currentNumber = number;
+    while (currentNumber > 0) {
+        int digit = currentNumber % 10; 
+        long rest = currentNumber / 10;
+        long tempRest = rest;
+        while (tempRest > 0) {
+            if (tempRest % 10 == digit) {
+                printf("%d appears more than once!\n", digit);
+                break;
+            }
+            tempRest = tempRest / 10;
+        }
+
+        currentNumber = currentNumber / 10;
     }
-    ezra2=ezra2/10;
-}
-number=number/10;
-sfarot--;
-  }
+
 }
 
 else if (pick < 1 || pick > 6){
