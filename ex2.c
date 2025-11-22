@@ -13,7 +13,7 @@ int main()
 int pick = 0;
 while (pick != 6){
 
-printf("Welcome to our game, please choose an option:\n");
+printf("Welcome to our games, please choose an option:\n");
 printf("1. Ducky's Unity Game\n");
 printf("2. The Memory Game\n");
 printf("3. Professor Pat's Power Calculation\n");
@@ -44,7 +44,7 @@ if (pick == 1){
 
 else if (pick == 2 ){
      // task 2
-     printf("please enter the numbers of ducks:\n");
+     printf("please enter the number of ducks:\n");
      int ducks, choise=0;
      unsigned long long memorey = 0;
      scanf("%d", &ducks);
