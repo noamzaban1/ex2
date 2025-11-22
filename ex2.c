@@ -80,15 +80,34 @@ else if (pick == 2 ){
         }else if (result==0) {
             printf("duck number %d do Sh..\n", i+1);
         }
-     
      }
-
-
-
 }
 
 else if (pick == 3){
-
+    int number, exp;
+    printf("please enter the number\n");
+    scanf("%d", &number);
+    while(number<0){
+          printf("Invalid number, plaese try again\n"); 
+         scanf("%d", &number);
+    }
+    printf("please enter the exponent\n");
+    scanf("%d", &exp);
+     while(exp<0){
+          printf("Invalid number, plaese try again\n"); 
+         scanf("%d", &exp);
+    }
+    if(number==0){
+        printf("your power is: 0\n");
+    } else if(exp==0){
+ printf("your power is: 1\n");
+    } else{
+        int sum=1;
+        for(int i=0;i<exp;i++){
+            sum=sum*number;
+        }
+         printf("your power is: %d\n", sum);
+    }
 }
 
 else if (pick == 4){
@@ -125,7 +144,32 @@ while (choise >0)
 }
 
 else if (pick == 5){
+     int number;
+    printf("please enter number\n");
+    scanf("%d", &number);
+    while(number<1){
+          printf("Invalid number, plaese try again\n"); 
+         scanf("%d", &number);
+    }
+int help = number;
+int sfarot;
+while(number!=0){
+help= help/10;
+sfarot++;
+}
 
+  for(int i=0; i<sfarot;i++)  {
+int ezra=number %10;
+int ezra2=number /10;
+for(int i=0;i<sfarot-1;i++){
+    if (ezra==ezra2%10){
+        printf("%d appears more than one!\n", ezra);
+    }
+    ezra2=ezra2/10;
+}
+number=number/10;
+sfarot--;
+  }
 }
 
 else if (pick < 1 || pick > 6){
